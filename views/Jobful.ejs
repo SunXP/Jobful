@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Jobful</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../public/css/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/site.css">
+
+  <link rel="stylesheet" type="text/css" href="../public/css/components/container.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/grid.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/header.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/image.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="../public/css/divider.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/dropdown.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/segment.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/button.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/list.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/icon.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/sidebar.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/components/transition.css">
+
+  <style type="text/css">
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+
+<!-- Page Contents -->
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui text container">
+      <h1 class="ui inverted header">
+        Welcome to Jobful
+      </h1>
+      <h2>Let's find some companies who want YOU!</h2>
+      <h2>Just upload your resume below, and we'll handle the rest.</h2>
+      <br>
+      <form enctype="multipart/form-data" onsubmit="return test()" id="resume-form">
+        <textarea  name="resume" id="resume-text"></textarea>
+        <button class="ui huge primary button">Upload Resume <i class="upload icon"></i></button>
+      </form>
+    </div>
+</div>
+
+<br><br><br>
+
+<div class="ui two column doubling stackable grid container">
+
+<div class="column">
+<div class="ui raised segment">
+<h2>Software Developer Internship, Redmond<h2>
+<h4>Description:</h4>
+<p>Whole lotta text whole lotta text whole lotta text whole lotta text whole lotta text</p>
+<h4>Link:</h4>
+<p>www.website.com</p>
+</div>
+
+<div class="ui raised segment">
+<h2>Software Developer Internship, Redmond<h2>
+<h4>Description:</h4>
+<p>Whole lotta text whole lotta text whole lotta text whole lotta text whole lotta text</p>
+<h4>Link:</h4>
+<p>www.website.com</p>
+</div>
+</div>
+
+<div class="column">
+  <div class="ui raised segment">
+<h2>UX Design Internship, Seattle</h2>
+<h4>Description:</h4>
+<p>Whole lotta text whole lotta text whole lotta text whole lotta text whole lotta text</p>
+<h4>Link:</h4>
+<p>www.internet.gov</p>
+</div>
+
+<div class="ui raised segment">
+<h2>UX Design Internship, Seattle</h2>
+<h4>Description:</h4>
+<p>Whole lotta text whole lotta text whole lotta text whole lotta text whole lotta text</p>
+<h4>Link:</h4>
+<p>www.internet.gov</p>
+</div>
+</div>
+</div>
+  <script>
+      function test() {
+          var resume = $('#resume-text').val();
+          $.post('http://rezscore.com/a/3e771d/grade?resume='+resume,
+              function(returnedData){
+              console.log(returnedData);
+                  var xml_node = $('rezscore',returnedData);
+                  console.log( xml_node.find('score > grade').text() );
+//                  xmlDoc = $.parseXML( returnedData );
+//                  $xml = $( xmlDoc );
+//                  $title = $xml.find( 'grade');
+//                  console.log($title.text());
+              });
+
+
+//          $.ajax({
+//              type: "POST",
+//              timeout: 50000,
+//              url: "http://rezscore.com/a/3e771d/grade",
+//              data: { Key: "resume", Value: $('#resume-text').val() },
+//              success: function (data) {
+////                  alert('success');
+//                  console.log(data);
+////                  xmlDoc = $.parseXML( data );
+////                  $xml = $( xmlDoc );
+////                  $title = $xml.find( "grade" );
+////                  console.log($title.text());
+//                  return false;
+//              }
+//          });
+
+      }
+
+      $("#resume-form").submit(function(e) {
+          e.preventDefault();
+      });
+
+  </script>
+
+</body>
+
+
+
+</html>

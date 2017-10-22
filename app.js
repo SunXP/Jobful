@@ -1,8 +1,7 @@
-var express = require("express");
+var express = require('express');
 var app = express();
-var request = require("request");
-
-app.set("view engine", "ejs");
+var request = require('request');
+// app.use(express.static(path.join(__dirname, 'public')));
 
 // request('http://www.google.com', function(error, response, body){
 //     if(error){
@@ -15,8 +14,10 @@ app.set("view engine", "ejs");
 //     }
 //     });
 
+app.set("view engine", "ejs");
+
 app.get("/", function(req, res){
-    res.render("landing")
+    res.render("Jobful")
 });
 
 app.listen(3000, function(){
